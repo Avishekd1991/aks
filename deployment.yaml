@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: firstpod-deployment
+  name: 2firstpod-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: firstpod
+      app: 2firstpod
   template:
     metadata:
       labels:
-        app: firstpod
+        app: 2firstpod
     spec:
       containers:
-      - name: firstpod
+      - name: 2firstpod
         image: nginx
         ports:
+
         - containerPort: 80
